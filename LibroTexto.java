@@ -9,9 +9,9 @@ public class LibroTexto extends Libro {
         return curso;
     }
         
-    public static void imprimeLibro(Libro l1) {
-        System.out.println("Titulo: " + l1.getTitulo());
-        System.out.println("Autores: " + l1.getAutores());
+    public void imprimeLibro(LibroTexto l1) {
+        super.imprimeLibro(l1);
+        System.out.println("Curso: " + l1.getCurso());
         }
 
 }

@@ -8,8 +8,8 @@ public class Novela extends Libro {
         public String getTema() {
         return tema;
     }
-    public static void imprimeLibro(Libro l1) {
-    System.out.println("Titulo: " + l1.getTitulo());
-    System.out.println("Autores: " + l1.getAutores());
+    public void imprimeLibro(Novela l1) {
+        super.imprimeLibro(l1);
+        System.out.println("Tema: " + l1.getTema());
     }
 }
